@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class NewReleaseAdapter extends RecyclerView.Adapter<NewReleaseAdapter.ViewHolder> {
+public class NewReleaseAdapter extends RecyclerView.Adapter<NewReleaseAdapter.ViewHolder>  {
 
     ArrayList<Result> resultnewRelease;
     Context context;
@@ -46,10 +46,9 @@ public class NewReleaseAdapter extends RecyclerView.Adapter<NewReleaseAdapter.Vi
         Log.d("Value", "onBindViewHolder: " + resultnewRelease.get(position));
 
         //Picasso.get().load(Value).into(holder.imageView);
-        Glide.with(this.context)
-                .load(resultnewRelease.get(position).getBackdropPath())
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .into(holder.imageView);
+        Picasso.get().load(String.valueOf(resultnewRelease.get(position))).into(holder.imageView);
+
+        //Glide.with(context).load(resultnewRelease.get(position)).into(holder.imageView);
 
         holder.movie_name.setText(movie_name);
         holder.movie_release.setText(movie_release);
