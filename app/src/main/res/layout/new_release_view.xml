@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_margin="15dp"
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:text="124563145"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/movie_name"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+    <TextView
+        android:text="124563145"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/movie_release"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+</LinearLayout>
